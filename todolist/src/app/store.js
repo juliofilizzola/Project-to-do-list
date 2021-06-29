@@ -3,6 +3,7 @@ import todoReducer from '../features/todoSlice';
 
 export const store = configureStore({
   reducer: {
-    todosList: todoReducer,
+    todosLists: todoReducer,
   },
 });
+console.log(todoReducer, 'aqui no sotre')
