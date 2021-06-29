@@ -18,7 +18,7 @@ function App() {
             key={itemList.id}
             name={itemList.item}
             done={itemList.done}
-            
+            id={itemList.id}
             />
             
           ))
