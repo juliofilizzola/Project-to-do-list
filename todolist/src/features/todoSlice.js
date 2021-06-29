@@ -5,19 +5,15 @@ const initialState = {
 }
 
 const todoSlice = createSlice({
-  name: 'todosList',
+  name: 'todos',
   initialState,
   reducers: {
-    saveTodo:(state = initialState.todoList, action) => {
-      switch (action.type) {
-        case 'SAVE':
-          state.todoList.push(action.newItemList);
-          break;
-        default: return state;  
-      }
+    saveTodo:(state, action) => {
+      state.todoList.push(action.newItemList);
     }
   }
 });
 
-export const { saveTodo } = todoSlice.actions
+export const { saveTodo } = todoSlice.actions;
+export const selectedTodoList = (state) = state.todos.todoList;
 export default todoSlice.reducer;
