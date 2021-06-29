@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import useDispatch from 'react-redux';
-import saveTodo from '../features/todoSlice';
+import { useDispatch } from 'react-redux';
+import { saveTodo } from '../features/todoSlice';
 
 const Input = () => {
   const [List, setList] = useState('');
