@@ -3,14 +3,14 @@ import Checkbox from '@material-ui/core/Checkbox';
 
 
 export const TodoItem = ({ name, done, id }) => {
-  // const handleChange = () => {
+  const handleChange = () => {
 
-  // }
+  }
   return (
     <div>
       <Checkbox
         checked={ done }
-        onChange={'handleChange'}
+        onChange={handleChange}
         name="checkedB"
         color="primary"
       />

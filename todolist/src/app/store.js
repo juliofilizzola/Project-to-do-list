@@ -6,4 +6,3 @@ export const store = configureStore({
     todosLists: todoReducer,
   },
 });
-console.log(todoReducer, 'aqui no sotre')
