@@ -10,6 +10,7 @@ function App() {
   const todoList = useSelector(selectedTodoList);
   return (
     <div className="App">
+      <Input />
       <div>
         {
           
@@ -24,7 +25,6 @@ function App() {
           ))
         }
       </div>
-      <Input />
     </div>
   );
 }
