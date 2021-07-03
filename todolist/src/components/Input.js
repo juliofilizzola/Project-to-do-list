@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { saveTodo } from '../features/todoSlice';
+import '../style/inputButton.css'
 
 const Input = () => {
   const [List, setList] = useState('');
@@ -14,7 +15,7 @@ const Input = () => {
     }));
   }
   return (
-    <div>
+    <div className="inputButton">
       <input type="text" value={List} onChange={({target})=> setList(target.value)} />
       <button onClick={addTodo}>Add na Todo</button>
     </div>
