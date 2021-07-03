@@ -11,7 +11,7 @@ export const TodoItem = ({ name, done, id }) => {
     dispatch(setCheck(id))
   }
   return (
-    <div>
+    <div className="container">
       <Checkbox
         checked={ done }
         onChange={handleChange}
