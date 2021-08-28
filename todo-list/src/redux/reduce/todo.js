@@ -7,9 +7,10 @@ const INITIAL_STATE = {
 function todo(state = INITIAL_STATE, action) {
   switch(action.type) {
     case NEW_TASK: 
+    console.log(action.payload)
     return {
       ...state,
-      tasks: [...action.payload],
+      tasks: [...state.tasks, action.payload],
     }
     default:
       return state;
