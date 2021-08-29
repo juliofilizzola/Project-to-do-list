@@ -1,19 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { deleteTask } from '../redux/action/index';
 
-function Tasks(tasks) {
+function Tasks({tasks, deleteT}) {
 
-  const deleteTask = (task) => {
-    const deleteTasks = tasks.tasks.filter(tasks => tasks !== task);
-    console.log(deleteTasks);
-  };
+  const deleteTasks = (index) => deleteT(index);
 
   return (
     <div>
-      {tasks.tasks && tasks.tasks.map((task, index ) =>( 
+      {tasks && tasks.map((task, index ) =>( 
         <div key={index}>
           <p>{task}</p>
-          <button onClick={() => deleteTask(task)}>Excluir Task</button>
+          <button onClick={() => deleteTasks(index)}>Excluir Task</button>
         </div>
       ))}
     </div>
@@ -21,7 +19,7 @@ function Tasks(tasks) {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  deleteTask: (task) => {}
+  deleteT: (task) => dispatch(deleteTask(task)),
 });
 
 const mapStateToProps = (state) => ({

@@ -14,9 +14,10 @@ function todo(state = INITIAL_STATE, action) {
       isLoading: false,
     }
     case DELETE_TASK: 
+    console.log(action.payload);
     return {
       ...state,
-      tasks: [...state.tasks, action.payload],
+      tasks: [ ...state.tasks.filter((tasks,i )=> i !== action.payload)],
       isLoading: true,
     }
     default:
