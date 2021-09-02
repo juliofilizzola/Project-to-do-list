@@ -5,15 +5,23 @@
   margin: 58px;
   background-color: #fffffe;
   label {
-    width: 80%;
+
     padding: 0.5em;
     input {
-      border-radius: 5%;
+      height: 40px;
+      width: 250px;
+      border-radius: 8px;
     }
   }
   button {
-    margin-top: 0.5em;
-    background: #eebbc3;
-    border-radius: 5%;
+    border-radius: 8px;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 50px;
+    font: bold 15px arial, sans-serif;
+    text-shadow:none;
   }
 }

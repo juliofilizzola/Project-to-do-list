@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import { setNewTask } from '../redux/action/index';
+import { BsArrowReturnLeft } from "react-icons/bs";
 import "./input.scss";
 
 function Input({NewTask}) {
@@ -27,7 +28,7 @@ function Input({NewTask}) {
         type="button"
         onClick={addNewTask}
       >
-        Add Task
+        <BsArrowReturnLeft/>
       </button>
     </div>
   );
