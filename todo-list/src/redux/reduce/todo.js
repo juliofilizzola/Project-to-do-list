@@ -20,7 +20,6 @@ function todo(state = INITIAL_STATE, action) {
       isLoading: true,
     }
     case COMPLETED_TASK:
-      console.log(action.payload);
     return {
       ...state,
       tasks: [...action.payload],
