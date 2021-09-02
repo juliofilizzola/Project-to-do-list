@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from 'react-redux';
 import { setNewTask } from '../redux/action/index';
+import "./input.scss";
 
 function Input({NewTask}) {
   const [task, setTask] =  React.useState('');
@@ -18,14 +19,15 @@ function Input({NewTask}) {
   };
 
   return (
-    <div>
+    <div className="task-input">
       <label htmlFor="inputTask">
         <input type="text" value={task} name="inputTask" onChange={({ target }) => setTask(target.value)} />
       </label>
       <button
+        type="button"
         onClick={addNewTask}
       >
-        ola
+        Add Task
       </button>
     </div>
   );
