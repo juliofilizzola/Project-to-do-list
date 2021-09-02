@@ -2,12 +2,16 @@ import React from "react";
 import { connect } from 'react-redux';
 import { setNewTask } from '../redux/action/index';
 
-function Input(NewTask) {
+function Input({NewTask}) {
   const [task, setTask] =  React.useState('');
 
   const addNewTask = () => {
     if(task) {
-      NewTask.NewTask(task);
+      let obTasks = {
+        task,
+        id: Math.floor(Math.random() * 100000)
+      }
+      NewTask(obTasks);
       setTask('');
     }
   };

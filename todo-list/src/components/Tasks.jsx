@@ -3,15 +3,18 @@ import { connect } from 'react-redux';
 import { deleteTask } from '../redux/action/index';
 
 function Tasks({tasks, deleteT}) {
+  // console.log(tasks[0].task);
 
   const deleteTasks = (index) => deleteT(index);
+  const completeTask = (id) => id
 
   return (
     <div>
-      {tasks && tasks.map((task, index ) =>( 
+      {tasks && tasks.map((tasks, index ) =>( 
         <div key={index}>
-          <p>{task}</p>
+          <p>{tasks.task}</p>
           <button onClick={() => deleteTasks(index)}>Excluir Task</button>
+          <button onClick={() =>completeTask(tasks.id)}>Atividade concluida</button>
         </div>
       ))}
     </div>
