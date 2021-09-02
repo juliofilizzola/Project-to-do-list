@@ -9,7 +9,8 @@ function Input({NewTask}) {
     if(task) {
       let obTasks = {
         task,
-        id: Math.floor(Math.random() * 100000)
+        id: Math.floor(Math.random() * 100000),
+        completed: false,
       }
       NewTask(obTasks);
       setTask('');

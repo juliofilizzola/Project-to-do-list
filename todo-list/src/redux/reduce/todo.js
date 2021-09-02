@@ -1,4 +1,4 @@
-import { NEW_TASK, DELETE_TASK } from "../action";
+import { NEW_TASK, DELETE_TASK, COMPLETED_TASK } from "../action";
 
 const INITIAL_STATE = {
   tasks: [],
@@ -13,11 +13,17 @@ function todo(state = INITIAL_STATE, action) {
       tasks: [...state.tasks, action.payload],
       isLoading: false,
     }
-    case DELETE_TASK: 
-    console.log(action.payload);
+    case DELETE_TASK:
     return {
       ...state,
       tasks: [ ...state.tasks.filter((tasks,i )=> i !== action.payload)],
+      isLoading: true,
+    }
+    case COMPLETED_TASK:
+      console.log(action.payload);
+    return {
+      ...state,
+      tasks: [...action.payload],
       isLoading: true,
     }
     default:
