@@ -7,7 +7,11 @@ function Tasks({tasks, deleteT, completed}) {
   const completeTask = (id) => {
    let obTasks = tasks.map((taskId) => {
       if ( id === taskId.id ) {
-        taskId.completed = !taskId.completed;
+        return {
+          task: taskId.task,
+          id,
+          completed: !taskId.completed
+        }
       }
       return taskId;
     });
