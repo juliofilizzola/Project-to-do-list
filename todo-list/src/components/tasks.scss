@@ -3,9 +3,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 58px;
-  background-color: #fffffe;
+
+  background-color: transparent;
   .task-list-item  {
+    margin: 15px 0 15px 0;
     display: flex;
     justify-content: space-between;
     width: 50%;
