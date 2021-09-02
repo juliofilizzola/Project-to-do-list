@@ -24,7 +24,6 @@ function Tasks({tasks, deleteT, completed}) {
       {tasks && tasks.map((tasks, index ) =>(
         <div key={index}>
           <p>{tasks.task}</p>
-          <div>{tasks.completed? '1': '0'}</div>
           <button onClick={() => deleteTasks(index)}>Excluir Task</button>
           <button onClick={() => completeTask(tasks.id)}>Atividade concluida</button>
         </div>
