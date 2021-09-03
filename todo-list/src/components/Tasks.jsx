@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { deleteTask, updateTask } from '../redux/action/index';
+import { BsCheckBox, BsXSquare } from "react-icons/bs";
+
 import "./tasks.scss"
 
 function Tasks({tasks, deleteT, completed}) {
@@ -26,8 +28,8 @@ function Tasks({tasks, deleteT, completed}) {
         <div key={index} className={`task-list-item ${tasks.completed? 'completed' : ''}`}>
           <p>{tasks.task}</p>
           <div className="btn">
-            <button type="button" onClick={() => deleteTasks(index)}>Excluir Task</button>
-            <button type="button" onClick={() => completeTask(tasks.id)}>Atividade concluida</button>
+            <button type="button" onClick={() => deleteTasks(index)}><BsXSquare/></button>
+            <button type="button" onClick={() => completeTask(tasks.id)}><BsCheckBox/></button>
           </div>
         </div>
       ))}
