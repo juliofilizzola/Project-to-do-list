@@ -1,4 +1,5 @@
 .task-list {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,16 +9,19 @@
   .btn {
     display: flex;
     justify-content: center;
+    gap:10px;
     button {
       background: transparent;
       border: none;
       text-align: center;
       color: #fff;
+      font-size: 30px;
     }
   }
   .task-list-item  {
     margin: 15px 0 15px 0;
     display: flex;
+    border-radius: 5px;
     justify-content: space-between;
     width: 50%;
     padding: 12px;
@@ -25,6 +29,7 @@
   }
   .completed {
     display: flex;
+    text-decoration: line-through;
     justify-content: space-between;
     width: 50%;
     padding: 10px;
