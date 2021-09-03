@@ -1,0 +1,26 @@
+.task-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  label {
+    input {
+      height: 40px;
+      width: 250px;
+      border-radius: 8px;
+    }
+  }
+
+  button {
+    margin-left: 10px;
+    border-radius: 8px;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 50px;
+    font: bold 15px arial, sans-serif;
+    text-shadow:none;
+  }
+}

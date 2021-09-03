@@ -1,9 +1,10 @@
 import Input from "../components/Input";
 import Tasks from "../components/Tasks";
+import "./todo.scss";
 
 function Todo() {
   return (
-    <div>
+    <div className="todo-container">
       <Input/>
       <Tasks/>
     </div>
