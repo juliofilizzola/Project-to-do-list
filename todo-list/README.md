@@ -12,5 +12,4 @@
 
 ## Descrição
 
-Projeto feito com React, Redux e CSS (SASS), com entuito de treinar conhecimentos nesses campos.
-git 
+Projeto feito com React, Redux e CSS (SASS), com entuito de treinar conhecimentos nesses campos. Também foi utilizando a biblioteca React Icon.
