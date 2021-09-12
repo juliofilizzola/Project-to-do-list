@@ -1,0 +1,32 @@
+.task-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.task-input label input {
+  height: 40px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.task-input button {
+  margin-left: 10px;
+  border-radius: 8px;
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 50px;
+  width: 50px;
+  font: bold 15px arial, sans-serif;
+  text-shadow: none;
+}
+/*# sourceMappingURL=input.css.map */
