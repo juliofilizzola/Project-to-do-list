@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import { setNewTask } from '../redux/action/index';
 import { BsArrowReturnLeft } from "react-icons/bs";
-import "./input.scss";
+import "./input.css";
 
 function Input({NewTask}) {
   const [task, setTask] =  React.useState('');

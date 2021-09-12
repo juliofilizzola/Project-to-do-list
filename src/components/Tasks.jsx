@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { deleteTask, updateTask } from '../redux/action/index';
 import { BsCheckBox, BsXSquare } from "react-icons/bs";
 
-import "./tasks.scss"
+import "./tasks.css"
 
 function Tasks({tasks, deleteT, completed}) {
   const deleteTasks = (index) => deleteT(index);

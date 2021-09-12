@@ -1,6 +1,6 @@
 import Input from "../components/Input";
 import Tasks from "../components/Tasks";
-import "./todo.scss";
+import "./todo.css";
 
 function Todo() {
   return (
